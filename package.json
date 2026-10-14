@@ -1,0 +1,54 @@
+{
+  "name": "vitals-pulse",
+  "version": "1.0.0",
+  "description": "Fail CI on Core Web Vitals: reads Lighthouse, Lighthouse CI, PageSpeed Insights and web-vitals reports (or runs Lighthouse), takes the median per URL and gates LCP, CLS, TBT (lab INP proxy), INP, FCP and TTFB against thresholds and a baseline. SARIF, GitHub Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "vitals-pulse": "bin/vitals-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "core-web-vitals",
+    "lighthouse",
+    "lcp",
+    "cls",
+    "inp",
+    "performance",
+    "web-vitals",
+    "ci",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/vitals-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/vitals-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/vitals-pulse#readme"
+}

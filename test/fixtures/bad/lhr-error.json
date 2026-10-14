@@ -1,0 +1,1 @@
+{"lighthouseVersion":"12.2.0","requestedUrl":"https://example.com/down","runtimeError":{"code":"ERRORED_DOCUMENT_REQUEST","message":"Lighthouse was unable to reliably load the page (Status code: 500)"},"audits":{}}

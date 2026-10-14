@@ -1,0 +1,30 @@
+{
+ "lighthouseVersion": "12.2.0",
+ "requestedUrl": "https://example.com/blog",
+ "finalDisplayedUrl": "https://example.com/blog",
+ "categories": {
+  "performance": {
+   "score": 0.78
+  }
+ },
+ "audits": {
+  "largest-contentful-paint": {
+   "numericValue": 3100
+  },
+  "cumulative-layout-shift": {
+   "numericValue": 0.12
+  },
+  "total-blocking-time": {
+   "numericValue": 250
+  },
+  "first-contentful-paint": {
+   "numericValue": 1500
+  },
+  "server-response-time": {
+   "numericValue": 200
+  },
+  "speed-index": {
+   "numericValue": 3000
+  }
+ }
+}
