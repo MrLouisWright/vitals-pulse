@@ -1,5 +1,7 @@
 # vitals-pulse
 
+[![npm version](https://img.shields.io/npm/v/vitals-pulse.svg)](https://www.npmjs.com/package/vitals-pulse) [![CI](https://github.com/MrLouisWright/vitals-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/vitals-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/vitals-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Fail CI when Core Web Vitals get worse: LCP, CLS and an INP proxy, gated on thresholds and on regressions against your baseline.
 
 Lighthouse tells you a page is slow; it does not stop the pull request that made it slow. `vitals-pulse` reads the reports you already produce (Lighthouse JSON, Lighthouse CI's `.lighthouseci` folder, PageSpeed Insights API responses, or web-vitals measurements from your RUM) or runs Lighthouse for you, takes the median of several runs per URL, and fails the build when a metric crosses Google's "poor" or "needs improvement" lines or regresses against a snapshot from your main branch.
