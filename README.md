@@ -179,11 +179,19 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev vitals-pulse
+```
+
 ```js
 import { loadRuns, summarise, evaluate } from "vitals-pulse";
 const { runs } = loadRuns([".lighthouseci"]);
 const findings = evaluate(summarise(runs), { thresholds: { lcp: 2000 } });
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("vitals-pulse")` from CommonJS.
 
 Types are included.
 
